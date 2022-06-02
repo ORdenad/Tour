@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ua">
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/datepicker.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="wrapper">
+<header class="header">
+	<div class="header__content">
+		<a href="#" class="header__logo">
+			<img src="img/icons/logo.png" alt="">
+		</a>
+		<div class="header__menu menu">
+			<div class="header__globe">
+				<img src="img/icons/globe.svg" alt="">
+			</div>
+			<div class="menu__icon icon-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li><a href="" class="menu__link">Про компанію</a></li>
+					<li><a href="" class="menu__link">Послуги</a></li>
+					<li><a href="" class="menu__link">Типові запитання</a></li>
+					<li><a href="" class="menu__link">Оплата і доставка</a></li>
+					<li><a href="" class="menu__link">Контакти</a></li>
+				</ul>
+				<ul class="menu__list menu__list_blue">
+					<li><a href="" class="menu__link">Подорожі</a></li>
+					<li><a href="" class="menu__link">Розпродаж</a></li>
+					<li><a href="" class="menu__link">Країни</a></li>
+					<li><a href="" class="menu__link">Мої подорожі</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__num-btn">
+			<div class="header__num num-header">
+				<a href="#" class="num-header__icon">
+					<img src="img/icons/phone.svg" alt="">
+				</a>
+				<div data-da='menu__body, 0, 680' class="num-header__body">
+					<a href="tel:" class="num-header__phone">+38 050 914 19 59</a>
+					<a href="#popup" class="num-header__order popup-link">Замовити дзвінок</a>
+				</div>
+			</div>
+			<div class="header__btn-block">
+				<a href="#" class="header__btn btn btn_b">Знайти подорожі</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+				<!-- html меню с иконкой бургера
+				<div class="header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="" class="menu__link"></a></li>
+						</ul>
+					</nav>
+				</div> -->			<main class="page">
+				<div class="fullscreen">
+					<form action="#" class="fullscreen__body">
+						<div class="fullscreen__title">
+							Куди відправимось?
+						</div>
+						<div class="fullscreen__text">
+							Ви можете здійснити пошук по декільком напр’ямкам одночасно
+						</div>
+						<div class="fullscreen__search">
+							<input type="text" autocomplete="off" name="form[]" data-value="Країна, місто, регіон, готель" class="input">
+						</div>
+						<div class="fullscreen__row-box">
+							<div class="fullscreen__row">
+								<div class="fullscreen__column">
+									<div class="calendar-item">
+										<div class="calendar-item__calendar">
+											<input type="text" autocomplete="off" name="form[date]" data-value="Місяць або дата" class="input _date">
+										</div>
+										<div class="calendar-item__check check">
+											гнучкі дати
+											<input type="checkbox" value="1" name="form[]">
+										</div>
+									</div>
+								</div>
+								<div class="fullscreen__column fullscreen__column_sl">
+									<div class="day-filter">
+										<div class="day-filter__title">Тривалість</div>
+										<!-- <div class="day-filter__slider" id="slider">THis</div> -->
+										<div class="day-filter__slider price">
+											<div class="price-filter__slider" id="price-filter__slider"></div>
+										</div>
+									</div>
+								</div>
+								<div class="fullscreen__column">
+									<div data-spollers class="people-fullscreen spollers">
+										<div class="people-fullscreen__item">
+											<div data-spoller class="people-fullscreen__title spoller">Кількість подорожуючих</div>
+											<div class="people-fullscreen__count">
+												<div class="people-fullscreen__item-small">
+													<div class="people-fullscreen__label">
+														Дорослих
+													</div>
+													<div class="people-fullscreen__quantity quantity">
+														<div class="quantity__input">
+															<input autocomplete="off" type="text" name="form[]" value="1">
+														</div>
+														<div class="quantity__button quantity__button_minus"></div>
+														<div class="quantity__button quantity__button_plus"></div>
+													</div>
+												</div>
+												<div class="people-fullscreen__item-small">
+													<div class="people-fullscreen__label">
+														Дітей
+													</div>
+													<div class="people-fullscreen__quantity quantity">
+														<div class="quantity__input">
+															<input autocomplete="off" type="text" name="form[]" value="1">
+														</div>
+														<div class="quantity__button quantity__button_minus"></div>
+														<div class="quantity__button quantity__button_plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="fullscreen__hide"><span>Cховати</span></div>
+						</div>
+						<div class="fullscreen__show"><span>Розширений пошук</span></div>
+						<button type="submit" class="fullscreen__btn btn btn_w">Знайти подорожі</button>
+					</form>
+					<div class="fullscreen__bg ibg">
+						<img src="img/main-bg.jpg" alt="">
+					</div>
+					<a href="#popup" class="fullscreen__phone popup-link">
+						<img src="img/icons/phone-bg.png" alt="">
+					</a>
+				</div>
+				<div class="sales">
+					<div class="sales__content container">
+						<div class="sales__main-title title">
+							Розпродаж подорожей
+						</div>
+						<div class="sales__filter filter">
+							<ul class="filter__list">
+								<li data-filter="1" class="filter__label active">Всі країни</li>
+								<li data-filter="2" class="filter__label">Екскрусійні тури</li>
+								<li data-filter="3" class="filter__label">Єгипет</li>
+								<li data-filter="4" class="filter__label">ОАЕ</li>
+								<li data-filter="5" class="filter__label">Шрі Ланка</li>
+								<li data-filter="6" class="filter__label">Домінікана</li>
+								<li data-filter="7" class="filter__label">Тайланд</li>
+								<li data-filter="8" class="filter__label">Греція</li>
+								<li data-filter="9" class="filter__label">Мальдіви</li>
+								<li data-filter="10" class="filter__label">Куба</li>
+							</ul>
+						</div>
+						<div class="sales__items">
+							<div class="sales__column f_2">
+								<div class="sales__item">
+									<a href="#" class="sales__image ibg">
+										<img src="img/sales/01.jpg" alt="">
+										<span class="sales__labels">
+											<span class="sales__label">Розпродаж</span>
+										</span>
+									</a>
+									<div class="sales__body">
+										<div class="sales__id">
+											id: 103980
+										</div>
+										<a href="#" class="sales__title">
+											Sunrise Marina Port Ghalib 5*
+										</a>
+										<div class="sales__city">
+											Єгипет, Шарм Ель Шейк
+										</div>
+										<ul class="sales__aspects aspects-sales">
+											<li>
+												<span class="aspects-sales__date">16-26 листопада (20 ночей)</span>
+											</li>
+											<li>
+												<span class="aspects-sales__visa">Без візи</span>
+											</li>
+											<li>
+												<span class="aspects-sales__from">Виліт зі Львову</span>
+											</li>
+										</ul>
+										<div class="sales__accommodation accommodation-sales">
+											<div class="accommodation-sales__hotel-block">
+												<div class="accommodation-sales__title">Готель</div>
+												<!-- <div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<input id="rating__5" class="rating__item" name="rating" type="radio" value="5">
+														<label for="rating__5" class="rating__label"></label>
+														<input id="rating__4" class="rating__item" name="rating" type="radio" value="4">
+														<label for="rating__4" class="rating__label"></label>
+														<input id="rating__3" class="rating__item" name="rating" type="radio" value="3">
+														<label for="rating__3" class="rating__label"></label>
+														<input id="rating__2" class="rating__item" name="rating" type="radio" value="2">
+														<label for="rating__2" class="rating__label"></label>
+														<input id="rating__1" class="rating__item" name="rating" type="radio" value="1">
+														<label for="rating__1" class="rating__label"></label>
+													</div>
+												</div> -->
+												<div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<label for="rating__5" class="rating__label"></label>
+														<label for="rating__4" class="rating__label rating__label_active"></label>
+														<label for="rating__3" class="rating__label rating__label_active"></label>
+														<label for="rating__2" class="rating__label rating__label_active"></label>
+														<label for="rating__1" class="rating__label rating__label_active"></label>
+													</div>
+												</div>
+											</div>
+											<div class="accommodation-sales__eat-block">
+												<div class="accommodation-sales__title">Харчування</div>
+												<div class="accommodation-sales__status">Ultra All-Inclusive</div>
+											</div>
+										</div>
+										<div class="sales__price-perperson">
+											<span>2 649</span>₴ / особу
+										</div>
+										<div class="sales__price">
+											89 € 
+										</div>
+										<div class="sales__compare">
+											<span>Додати до порівняння</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sales__column f_3">
+								<div class="sales__item">
+									<a href="#" class="sales__image ibg">
+										<img src="img/sales/02.jpg" alt="">
+										<span class="sales__labels">
+											<span class="sales__label">Розпродаж</span>
+										</span>
+									</a>
+									<div class="sales__body">
+										<div class="sales__id">
+											id: 103980
+										</div>
+										<a href="#" class="sales__title">
+											Sunrise Marina Port Ghalib 5*
+										</a>
+										<div class="sales__city">
+											Єгипет, Шарм Ель Шейк
+										</div>
+										<ul class="sales__aspects aspects-sales">
+											<li>
+												<span class="aspects-sales__date">16-26 листопада (20 ночей)</span>
+											</li>
+											<li>
+												<span class="aspects-sales__visa">Без візи</span>
+											</li>
+											<li>
+												<span class="aspects-sales__from">Виліт зі Львову</span>
+											</li>
+										</ul>
+										<div class="sales__accommodation accommodation-sales">
+											<div class="accommodation-sales__hotel-block">
+												<div class="accommodation-sales__title">Готель</div>
+												<div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<label for="rating__5" class="rating__label"></label>
+														<label for="rating__4" class="rating__label"></label>
+														<label for="rating__3" class="rating__label rating__label_active"></label>
+														<label for="rating__2" class="rating__label rating__label_active"></label>
+														<label for="rating__1" class="rating__label rating__label_active"></label>
+													</div>
+												</div>
+											</div>
+											<div class="accommodation-sales__eat-block">
+												<div class="accommodation-sales__title">Харчування</div>
+												<div class="accommodation-sales__status">Ultra All-Inclusive</div>
+											</div>
+										</div>
+										<div class="sales__price-perperson">
+											<span>2 649</span>₴ / особу
+										</div>
+										<div class="sales__price">
+											89 € 
+										</div>
+										<div class="sales__compare">
+											<span>Додати до порівняння</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sales__column f_2">
+								<div class="sales__item">
+									<a href="#" class="sales__image ibg">
+										<img src="img/sales/03.jpg" alt="">
+										<span class="sales__labels">
+											<span class="sales__label">Розпродаж</span>
+										</span>
+									</a>
+									<div class="sales__body">
+										<div class="sales__id">
+											id: 103980
+										</div>
+										<a href="#" class="sales__title">
+											Sunrise Marina Port Ghalib 5*
+										</a>
+										<div class="sales__city">
+											Єгипет, Шарм Ель Шейк
+										</div>
+										<ul class="sales__aspects aspects-sales">
+											<li>
+												<span class="aspects-sales__date">16-26 листопада (20 ночей)</span>
+											</li>
+											<li>
+												<span class="aspects-sales__visa">Без візи</span>
+											</li>
+											<li>
+												<span class="aspects-sales__from">Виліт зі Львову</span>
+											</li>
+										</ul>
+										<div class="sales__accommodation accommodation-sales">
+											<div class="accommodation-sales__hotel-block">
+												<div class="accommodation-sales__title">Готель</div>
+												<div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<label for="rating__5" class="rating__label"></label>
+														<label for="rating__4" class="rating__label rating__label_active"></label>
+														<label for="rating__3" class="rating__label rating__label_active"></label>
+														<label for="rating__2" class="rating__label rating__label_active"></label>
+														<label for="rating__1" class="rating__label rating__label_active"></label>
+													</div>
+												</div>
+											</div>
+											<div class="accommodation-sales__eat-block">
+												<div class="accommodation-sales__title">Харчування</div>
+												<div class="accommodation-sales__status">Ultra All-Inclusive</div>
+											</div>
+										</div>
+										<div class="sales__price-perperson">
+											<span>2 649</span>₴ / особу
+										</div>
+										<div class="sales__price">
+											89 € 
+										</div>
+										<div class="sales__compare">
+											<span>Додати до порівняння</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sales__column f_3">
+								<div class="sales__item">
+									<a href="#" class="sales__image ibg">
+										<img src="img/sales/04.jpg" alt="">
+										<span class="sales__labels">
+											<span class="sales__label">Розпродаж</span>
+										</span>
+									</a>
+									<div class="sales__body">
+										<div class="sales__id">
+											id: 103980
+										</div>
+										<a href="#" class="sales__title">
+											Sunrise Marina Port Ghalib 5*
+										</a>
+										<div class="sales__city">
+											Єгипет, Шарм Ель Шейк
+										</div>
+										<ul class="sales__aspects aspects-sales">
+											<li>
+												<span class="aspects-sales__date">16-26 листопада (20 ночей)</span>
+											</li>
+											<li>
+												<span class="aspects-sales__visa">Без візи</span>
+											</li>
+											<li>
+												<span class="aspects-sales__from">Виліт зі Львову</span>
+											</li>
+										</ul>
+										<div class="sales__accommodation accommodation-sales">
+											<div class="accommodation-sales__hotel-block">
+												<div class="accommodation-sales__title">Готель</div>
+												<div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<label for="rating__5" class="rating__label rating__label_active"></label>
+														<label for="rating__4" class="rating__label rating__label_active"></label>
+														<label for="rating__3" class="rating__label rating__label_active"></label>
+														<label for="rating__2" class="rating__label rating__label_active"></label>
+														<label for="rating__1" class="rating__label rating__label_active"></label>
+													</div>
+												</div>
+											</div>
+											<div class="accommodation-sales__eat-block">
+												<div class="accommodation-sales__title">Харчування</div>
+												<div class="accommodation-sales__status">Ultra All-Inclusive</div>
+											</div>
+										</div>
+										<div class="sales__price-perperson">
+											<span>2 649</span>₴ / особу
+										</div>
+										<div class="sales__price">
+											89 € 
+										</div>
+										<div class="sales__compare">
+											<span>Додати до порівняння</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sales__column f_2">
+								<div class="sales__item">
+									<a href="#" class="sales__image ibg">
+										<img src="img/sales/05.jpg" alt="">
+										<span class="sales__labels">
+											<span class="sales__label">Розпродаж</span>
+										</span>
+									</a>
+									<div class="sales__body">
+										<div class="sales__id">
+											id: 103980
+										</div>
+										<a href="#" class="sales__title">
+											Sunrise Marina Port Ghalib 5*
+										</a>
+										<div class="sales__city">
+											Єгипет, Шарм Ель Шейк
+										</div>
+										<ul class="sales__aspects aspects-sales">
+											<li>
+												<span class="aspects-sales__date">16-26 листопада (20 ночей)</span>
+											</li>
+											<li>
+												<span class="aspects-sales__visa">Без візи</span>
+											</li>
+											<li>
+												<span class="aspects-sales__from">Виліт зі Львову</span>
+											</li>
+										</ul>
+										<div class="sales__accommodation accommodation-sales">
+											<div class="accommodation-sales__hotel-block">
+												<div class="accommodation-sales__title">Готель</div>
+												<div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<label for="rating__5" class="rating__label rating__label_active"></label>
+														<label for="rating__4" class="rating__label rating__label_active"></label>
+														<label for="rating__3" class="rating__label rating__label_active"></label>
+														<label for="rating__2" class="rating__label rating__label_active"></label>
+														<label for="rating__1" class="rating__label rating__label_active"></label>
+													</div>
+												</div>
+											</div>
+											<div class="accommodation-sales__eat-block">
+												<div class="accommodation-sales__title">Харчування</div>
+												<div class="accommodation-sales__status">Ultra All-Inclusive</div>
+											</div>
+										</div>
+										<div class="sales__price-perperson">
+											<span>2 649</span>₴ / особу
+										</div>
+										<div class="sales__price">
+											89 € 
+										</div>
+										<div class="sales__compare">
+											<span>Додати до порівняння</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sales__column f_3">
+								<div class="sales__item">
+									<a href="#" class="sales__image ibg">
+										<img src="img/sales/06.jpg" alt="">
+										<span class="sales__labels">
+											<span class="sales__label">Розпродаж</span>
+										</span>
+									</a>
+									<div class="sales__body">
+										<div class="sales__id">
+											id: 103980
+										</div>
+										<a href="#" class="sales__title">
+											Sunrise Marina Port Ghalib 5*
+										</a>
+										<div class="sales__city">
+											Єгипет, Шарм Ель Шейк
+										</div>
+										<ul class="sales__aspects aspects-sales">
+											<li>
+												<span class="aspects-sales__date">16-26 листопада (20 ночей)</span>
+											</li>
+											<li>
+												<span class="aspects-sales__visa">Без візи</span>
+											</li>
+											<li>
+												<span class="aspects-sales__from">Виліт зі Львову</span>
+											</li>
+										</ul>
+										<div class="sales__accommodation accommodation-sales">
+											<div class="accommodation-sales__hotel-block">
+												<div class="accommodation-sales__title">Готель</div>
+												<div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<label for="rating__5" class="rating__label"></label>
+														<label for="rating__4" class="rating__label"></label>
+														<label for="rating__3" class="rating__label rating__label_active"></label>
+														<label for="rating__2" class="rating__label rating__label_active"></label>
+														<label for="rating__1" class="rating__label rating__label_active"></label>
+													</div>
+												</div>
+											</div>
+											<div class="accommodation-sales__eat-block">
+												<div class="accommodation-sales__title">Харчування</div>
+												<div class="accommodation-sales__status">Ultra All-Inclusive</div>
+											</div>
+										</div>
+										<div class="sales__price-perperson">
+											<span>2 649</span>₴ / особу
+										</div>
+										<div class="sales__price">
+											89 € 
+										</div>
+										<div class="sales__compare">
+											<span>Додати до порівняння</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sales__column f_2">
+								<div class="sales__item">
+									<a href="#" class="sales__image ibg">
+										<img src="img/sales/07.jpg" alt="">
+										<span class="sales__labels">
+											<span class="sales__label">Розпродаж</span>
+										</span>
+									</a>
+									<div class="sales__body">
+										<div class="sales__id">
+											id: 103980
+										</div>
+										<a href="#" class="sales__title">
+											Sunrise Marina Port Ghalib 5*
+										</a>
+										<div class="sales__city">
+											Єгипет, Шарм Ель Шейк
+										</div>
+										<ul class="sales__aspects aspects-sales">
+											<li>
+												<span class="aspects-sales__date">16-26 листопада (20 ночей)</span>
+											</li>
+											<li>
+												<span class="aspects-sales__visa">Без візи</span>
+											</li>
+											<li>
+												<span class="aspects-sales__from">Виліт зі Львову</span>
+											</li>
+										</ul>
+										<div class="sales__accommodation accommodation-sales">
+											<div class="accommodation-sales__hotel-block">
+												<div class="accommodation-sales__title">Готель</div>
+												<div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<label for="rating__5" class="rating__label rating__label_active"></label>
+														<label for="rating__4" class="rating__label rating__label_active"></label>
+														<label for="rating__3" class="rating__label rating__label_active"></label>
+														<label for="rating__2" class="rating__label rating__label_active"></label>
+														<label for="rating__1" class="rating__label rating__label_active"></label>
+													</div>
+												</div>
+											</div>
+											<div class="accommodation-sales__eat-block">
+												<div class="accommodation-sales__title">Харчування</div>
+												<div class="accommodation-sales__status">Ultra All-Inclusive</div>
+											</div>
+										</div>
+										<div class="sales__price-perperson">
+											<span>2 649</span>₴ / особу
+										</div>
+										<div class="sales__price">
+											89 € 
+										</div>
+										<div class="sales__compare">
+											<span>Додати до порівняння</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sales__column f_3">
+								<div class="sales__item">
+									<a href="#" class="sales__image ibg">
+										<img src="img/sales/08.jpg" alt="">
+										<span class="sales__labels">
+											<span class="sales__label">Розпродаж</span>
+										</span>
+									</a>
+									<div class="sales__body">
+										<div class="sales__id">
+											id: 103980
+										</div>
+										<a href="#" class="sales__title">
+											Sunrise Marina Port Ghalib 5*
+										</a>
+										<div class="sales__city">
+											Єгипет, Шарм Ель Шейк
+										</div>
+										<ul class="sales__aspects aspects-sales">
+											<li>
+												<span class="aspects-sales__date">16-26 листопада (20 ночей)</span>
+											</li>
+											<li>
+												<span class="aspects-sales__visa">Без візи</span>
+											</li>
+											<li>
+												<span class="aspects-sales__from">Виліт зі Львову</span>
+											</li>
+										</ul>
+										<div class="sales__accommodation accommodation-sales">
+											<div class="accommodation-sales__hotel-block">
+												<div class="accommodation-sales__title">Готель</div>
+												<div class="accommodation-sales__rate rating">
+													<div class="rating__items">
+														<label for="rating__5" class="rating__label"></label>
+														<label for="rating__4" class="rating__label"></label>
+														<label for="rating__3" class="rating__label rating__label_active"></label>
+														<label for="rating__2" class="rating__label rating__label_active"></label>
+														<label for="rating__1" class="rating__label rating__label_active"></label>
+													</div>
+												</div>
+											</div>
+											<div class="accommodation-sales__eat-block">
+												<div class="accommodation-sales__title">Харчування</div>
+												<div class="accommodation-sales__status">Ultra All-Inclusive</div>
+											</div>
+										</div>
+										<div class="sales__price-perperson">
+											<span>2 649</span>₴ / особу
+										</div>
+										<div class="sales__price">
+											89 € 
+										</div>
+										<div class="sales__compare">
+											<span>Додати до порівняння</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="sales__btn btn btn_b">Всі акційні подорожі</a>
+					</div>
+				</div>
+				<div class="newsletter">
+					<div class="newsletter__content container">
+						<div class="newsletter__title title title_w">Отримуйте найвигідніші пропозиції першими — підпишіться на нашу розсилку</div>
+						<div class="newsletter__row">
+							<div class="newsletter__column">
+								<div class="newsletter__item">
+									<div class="newsletter__label">По email: </div>
+									<div class="newsletter__inp newsletter__inp_email">
+										<input type="email" autocomplete="off" name="form[]" data-value="Ваша email адреса" class="input">
+										<a href="#" class="newsletter__subscribe">Підписатись</a>
+									</div>
+								</div>
+							</div>
+							<div class="newsletter__column newsletter__column_sec">
+								<div class="newsletter__item">
+									<div class="newsletter__label">По смс: </div>
+									<div class="newsletter__inp newsletter__inp_phone">
+										<input type="tel" autocomplete="off" name="form[]" data-value="Ваш номер телефону" class="input">
+										<a href="#" class="newsletter__subscribe">Підписатись</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="newsletter__text">
+							Не більше 1 повідомлення в тиждень. Ніякого спаму. Ви зможете відписатись будь-коли забажаєте.
+						</div>
+					</div>
+				</div>
+				<div class="special">
+					<div class="special__content container">
+						<div class="special__title title">Спеціальні пропозиції</div>
+						<div class="special__row">
+							<div class="special__column">
+								<div class="special__item">
+									<div class="special__bg ibg">
+										<img src="img/special/01.jpg" alt="">
+									</div>
+									<div class="special__body">
+										<div class="special__label">Весілля за кордоном</div>
+										<div class="special__text">
+											Перетворіть своє весілля на незабутню казку, неповторне дійство в одному з найчарівніших куточків світу.
+										</div>
+										<a href="#" class="special__link">Дізнатися більше</a>
+									</div>
+								</div>
+							</div>
+							<div class="special__column">
+								<div class="special__item">
+									<div class="special__bg ibg">
+										<img src="img/special/02.jpg" alt="">
+									</div>
+									<div class="special__body">
+										<div class="special__label">Shopping тури в Дубаї</div>
+										<div class="special__text">
+											Перетворіть своє весілля на незабутню казку, неповторне дійство в одному з найчарівніших куточків світу.
+										</div>
+										<a href="#" class="special__link">Дізнатися більше</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="feedback">
+					<div class="feedback__content container">
+						<div class="feedback__title title">
+							Відгуки туристів
+						</div>
+						<div class="feedback__slider slider-feedback">
+							<div class="slider-feedback__body swiper">
+								<div class="slider-feedback__slide">
+									<div class="slider-feedback__item item-feedback">
+										<div class="item-feedback__title">Олександр (43)</div>
+										<div class="item-feedback__text">
+											Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования. Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования.
+										</div>
+									</div>
+								</div>
+								<div class="slider-feedback__slide">
+									<div class="slider-feedback__item item-feedback">
+										<div class="item-feedback__title">Антоніна (34)</div>
+										<div class="item-feedback__text">
+											Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования. Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования.
+										</div>
+									</div>
+								</div>
+								<div class="slider-feedback__slide">
+									<div class="slider-feedback__item item-feedback">
+										<div class="item-feedback__title">Антоніна (34)</div>
+										<div class="item-feedback__text">
+											Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования. Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования.
+										</div>
+									</div>
+								</div>
+								<div class="slider-feedback__slide">
+									<div class="slider-feedback__item item-feedback">
+										<div class="item-feedback__title">Антоніна (34)</div>
+										<div class="item-feedback__text">
+											Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования. Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования.
+										</div>
+									</div>
+								</div>
+								<div class="slider-feedback__slide">
+									<div class="slider-feedback__item item-feedback">
+										<div class="item-feedback__title">Антоніна (34)</div>
+										<div class="item-feedback__text">
+											Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования. Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования.
+										</div>
+									</div>
+								</div>
+								<div class="slider-feedback__slide">
+									<div class="slider-feedback__item item-feedback">
+										<div class="item-feedback__title">Антоніна (34)</div>
+										<div class="item-feedback__text">
+											Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования. Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-feedback__arrows">
+								<span class="slider-feedback__arrow slider-feedback__arrow_next"></span>
+								<span class="slider-feedback__arrow slider-feedback__arrow_prev"></span>
+							</div>
+							<div class="slider-feedback__dotts"></div>
+						</div>
+					</div>
+				</div>
+			</main>
+<footer class="footer">
+	<div class="footer__content container">
+		<div class="footer__main-info">
+			<div class="footer__logo"></div>
+			<ul class="footer__contacts">
+				<li>
+					<a href="#" class="footer__info-link footer__info-link_email">touristo@gmail.com</a>
+				</li>
+				<li>
+					<div class="footer__info-link-block">
+						<a href="#" class="footer__info-link footer__info-link_phone">+38 123 456 56 89</a>
+						<a href="#" class="footer__info-link footer__info-link_phone">+38 123 456 56 89</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="footer__info-link footer__info-link_city">м. Ужгород,<br> вул. Івана Франка 1в, оф. 1 </a>
+				</li>
+			</ul>
+			<ul class="footer__socials">
+				<li>
+					<a href="#" class="footer__social-link">
+						<img src="img/icons/fb.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__social-link">
+						<img src="img/icons/vk.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__social-link">
+						<img src="img/icons/inst.svg" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__categories categories-footer">
+			<div class="categories-footer__items">
+				<div class="categories-footer__column">
+					<div data-spollers="767.98,max" class="categories-footer__item">
+						<a data-spoller href="#" class="categories-footer__title">Подорожі</a>
+						<ul class="categories-footer__list">
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Каталог турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Весілля за кордоном</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="categories-footer__column">
+					<div data-spollers="767.98,max" class="categories-footer__item">
+						<a data-spoller href="#" class="categories-footer__title">Розпродаж</a>
+						<ul class="categories-footer__list">
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Каталог турів</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="categories-footer__column">
+					<div data-spollers="767.98,max" class="categories-footer__item">
+						<a data-spoller href="#" class="categories-footer__title">Країни</a>
+						<ul class="categories-footer__list">
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Каталог турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Каталог турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Каталог турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Каталог турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="categories-footer__column">
+					<div data-spollers="767.98,max" class="categories-footer__item">
+						<a data-spoller href="#" class="categories-footer__title">Про нас</a>
+						<ul class="categories-footer__list">
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Каталог турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Каталог турів</a>
+							</li>
+							<li>
+								<a href="#" class="categories-footer__link">Пошук турів</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div id="popup" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<div class="popup__close close-popup"></div>
+			<form action="#" class="popup__form">
+				<div class="popup__inp">
+					<input type="text" data-value="Ваше ім'я" class="input" name="form[]" autocomplete="off">
+				</div>
+				<div class="popup__inp">
+					<input type="tel" data-value="Ваш номер" class="input" name="form[]" autocomplete="off">
+				</div>
+				<button type="submit" class="popup__btn btn btn_w">Замовити</button>
+			</form>
+		</div>
+	</div>
+</div>		</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>	</body>
+</html>
